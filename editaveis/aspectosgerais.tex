@@ -71,21 +71,179 @@ Estes pontos necessários para que a implementação da solução do projeto pil
 
 \subsubsection{Definir Tecnologia}
 \label{sub:definir_tecnologia}
+Como o desenvolvimento da solução para o projeto piloto não necessita conter interfaces com design bem elaborado;
+usabilidade, baseado em user experience, elavada; dentre outras necessidades não funcionais. Os critérios levados em
+consideração para a sua construção foram os seguintes:
+
+\begin{itemize}
+    \item Desenvolvimento rápido: por se tratar de uma simples solução, temporária, o tempo de implementação deveria
+        ser curto, levantando o requisito de utilizar um framework de alta produtividade.
+    \item Padrões de Design simples: por se tratar de uma aplicação extremamente funcional, tal que o usuário não irá
+        utilizá-la por muito tempo, não há a necessidade de fortes esforços e grande elaboração dos padrões de
+        User Experience.
+    \item Escalabilidade baixa: como se trata de um público pequeno, para poucos usuários simultâneos, em torno de duzentos
+        acessos diários, o framework pode ser de baixo desenpenho, facilitanto assim a sua escolha.
+    \item Os usuários não carecem de executar cadastros e logins: para o escopo do piloto, cada usuário não necessitará
+        fazer registros e logins no site. A política de gerenciamento dos votos será feita mediante armazenamento dos
+        IP's utilizados durante o acesso, fazendo com que cada IP possa votar apenas uma vez dentro de um determinado
+        intervalo de tempo.
+    \item Suporte para questionários: como o piloto se trata de quistionários baseados em perguntas, há a necessidade que o framework
+        escolhido conceda suporte para criação de perguntas, possibilidade de votação, vizualização e contagem dos votos
+        separados por perguntas.
+    \item Facilidade de implantação: como se trata de um site web bem rápido, há a necessidade de que este seja de fácil e rápida
+        implantação, possibilitando que rápidamente seja colocado em produção. Dessa forma, o framework escohido também carece
+        de propiciar suporte para esta feature.
+\end{itemize}
+
+Dados os requisitos acima, irá se iniciar um processo de busca por ferramentas e frameworks que possibilitem a implentação do site
+web que os contemple. Para a avaliação, as ferramentas levantadas, que serão até cinco, irão ser submetidas à uma tabela que contempla
+os requisitos básicos necessários. Cada item da tabela poderá ser julgado de um a cinco, sendo que a nota 1 diz que a ferramenta não nada
+desta funcionalidade, já a nota 5 diz que esta contém totalemente esta funcionalidade. Assim, os valores intermediários: 2, 3 e 4 representam
+que possuem o requisito parcialmente, de acordo com a nota.
+
+% \usepackage{booktabs}
+\begin{table}[]
+    \centering
+    \begin{tabular}{@{}llllll@{}}
+        \toprule
+        \textbf{}                                                  & \textbf{Tool A}       & \textbf{Tool B}       & \textbf{Tool C}       & \textbf{Tool D}       & \textbf{Tool E}       \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Desenvolvimento Rápido}}      & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Padrões de Design Simpels}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Sem Autenticação}}            & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Baixa Escalabilidade}}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Suporte para Questionário}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Facilidade de Implementação}} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+                                                                   &                       &                       &                       &                       &                       \\ \midrule
+                                                                   \multicolumn{1}{|l|}{\textbf{Total}}                       & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \bottomrule
+    \end{tabular}
+    \caption{Avaliação dos Frameworks}
+    \label{my-label}
+\end{table}
+
+Cada ferramenta, no final da avaliação, terá uma nota entre 6 e 30, que será disposta na linha 'Total'. Assim, a ferramenta que possuir a maior nota será escolhida para a execução do projeto piloto.
 
 \subsubsection{Desenvolver Solução}
 \label{sub:definir_tecnologia}
 
+Dada a ferramenta escolhida, faz-se necessário que esta seja analizada em termos técnicos. Será necessário analisar e seguir alguns pontos, que
+serão descritos abaixo para que a solução seja implementada com sucesso:
+
+\begin{enumerate}
+    \item Escolher versão do framework que será utilizado;
+    \item Executar download do framework para o laboratório local, que terá os testes executados;
+    \item Executar instalação da ferramenta em um laboratório local, que será utilizado como ambiente de
+        desenvolvimento da aplicação;
+    \item Definir qual template será utilizado para a página home do site, layout da aplicação e menu principal;
+    \item Executar o download do plugin de execução de questionários na página principal do framework que será escolhido;
+    \item Instalar na aplicação o plugin para a criação, manutenção e vizualização dos questionários;
+    \item Configurar plugin de questionários para armazenar as perguntas e os índices de votação de cada pergunta em persistência;
+        Para que posteriormente seja possível executar a análise de todos os dados coletados;
+    \item Executar a criação de um questionário a fim de homologar a solução desenvolvida para os pré-requisitos estabelecidos. 
+    \item Executar a integração da questão criada para homologação no layout da home da aplicação;
+    \item Executar o gerenciamento de configuração de software para que o código fonte seja armazenado. Este será posteriormente
+        capturado para executar a aplicação no servidor de produção;
+\end{enumerate}
+
+Com todos esses passos executados, a solução está operando de acordo como o esperado para recolher os dados básicos propostos anteriormente.
+Assim, esta está preparada para ser disposta em produção em um servidor e disponibilizá-la para o público geral. Na próxima sessão serão
+detalhados os passos para ter a aplicação em produção.
+
 \subsubsection{Virá-la para a Produção}
 \label{sub:definir_tecnologia}
+Para que qualquer pessoa com acesso à internet possa conseguir ter acesso à aplicação desenvolvida, faz-se necessário que
+o site hospedado esteja em um servidor com um IP externo válido. Para melhor utilização da plataforma, será necessário adquirir um domínio
+que faça o apontamento para o IP do servidor adquirido. 
+
+Os passos necessários para virar o servidor de produção serão descritos nos itens seguintes:
+
+\begin{enumerate}
+    \item Avaliar qual será o provedor de máquinas virtuais será utilizado;
+    \item Adquirir uma máquina virtual com IP externo. Este deve conter o mínimo possível de capacidade de processamento e
+        disponibilidade de memória RAM para que seja possível suportar a hospedagem da solução;
+    \item Adquirir um domínio em um servidor DNS do server .com.br para apontamento do IP externo;
+    \item Configurar o domínio DNS adquirido para que este execute o apontamento do IP do servidor que será utilizado;
+    \item Executar instalação de um servidor de páginas HTTP no servidor;
+    \item Executar a instalação de uma base de dados para armazenamento das informações obtidas;
+    \item Recuperar o código fonte utilizado no ambiente de desenvolvimento para o servidor. Este será devidamente
+        instalado e recuperado assim como foi feito anteriormente;
+    \item Executar as configurações do framework para que este opere corretamente utilizando um servidor externo;
+    \item Executar a criação novamente de uma questão para que seja possível homologar o ambiente de produção.
+\end{enumerate}
+
+Estes passos vão assegurar que o servidor seja configurado corretamente e que esteja disponível para acesso externo para
+todos os usuários que vão o sistema.
+
+Com os procedimentos necessários para que o projeto piloto esteja acessível pelos usuários, já será possível executar o marketing
+para divulgar a algumas pessoas a aplicação. Os passos para o marketing serão descritos no próximo sub tópico.
 
 \subsubsection{Aplicar Marketin do projeto piloto}
 \label{sub:definir_tecnologia}
+Como se faz necessário que haja usuários utilizando o protótipo para recolher os dados, é fundamental que o propósito
+e o protótipo sejam divulgados para o público externo que irá utilizá-lo. 
+
+A proposta de marketing seguirá algumas diretivas que serão apresentadas a seguir:
+
+\begin{enumerate}
+    \item O público alvo foi definido para que este pudesse ser atingido facilmente. Como estamos tratando de um
+        projeto de desenvolvendo universitário, este meio pode ser facilmente almejado em pouco tempo. Isto se
+        deve ao volume de alunos existentes no campus com disponibilidade para testar novos projetos e ideias.
+        Desta maneira, o público alvo serão os universitários da UnB unidade Gama - Distrito federal(UnB-FGA).
+    \item Como estamos tratando de um projeto piloto que carece da presença de usuários a utilizando, alguns
+        pontos são extremamente importante para que o público alvo definido seja atingido. Assim, o meio de
+        distribuição do protótipo deve conter os seguintes pontos:
+        \begin{itemize}
+            \item Ser possível compartilhar os links publicados no protótipo;
+            \item Novas enquentes devem chegar rapidamente ao público alvo;
+            \item Novas enquentes devem ser dispostas em um meio que esteja disponível para todos os
+                alunos do campus FGA.
+        \end{itemize}
+    \item Existem vários meios possíveis para alcançar o público alvo, por exemplo:
+        \begin{itemize}
+            \item Contato direto verbal;
+            \item Cartazes e planfetos no campus;
+            \item Listas de emails;
+            \item Sites de fóruns da UnB;
+            \item Sites de devulgação;
+            \item Grupos e páginas do facebook.
+        \end{itemize}
+    \item Desta forma, será escolhido o meio de comunicação que atenda de melhor maneira os pré-requisitos descritos acima. Para que
+        seja possível compartilhar links, demonstrar rapidamente novas enquente e com o maior número de estudantes, o melhor meio de
+        comunicação é a utilização do facebook. Utilizando o facebook, é possível utilizar o grupo da faculdade, que contém vários alunos,
+        levantando em consideração que os links podem ser compartilhados por lá. Dessa forma, toda a apresentação do protótipo será executada
+        via grupo da faculdade no facebook;
+    \item Todas as novas enquetes serão apresentadas no grupo e compartilhadas também no grupo do facebook do campus da faculdade.
+\end{enumerate}
+
+Assim, todas as novas enquetes irão seguir os padrões estabelecidos nestas diretrízes de regras de marketing. Isto irá assegurar que
+o público alvo escolhido seja aumejado.
+ 
 
 \subsubsection{Manter a Solução}
 \label{sub:definir_tecnologia}
+Após a construção estabelecida e disponível para que os usuários a utilizem, já é possível aplicar novos questionários, fazendo uso do plano de marketing.
+Esta etapa consistirá em criar um sistema em que os próprios usuários vão ceder as novas informações para novos questionários. Estes questionários 
+terão as informações coletadas e futuramente utilizadas.
 
+Primeiramente, será criada uma segunda página para o site. Esta página será responsável por conter uma enquente com a seguinte pergunta:
+
+ \begin{quote}
+     "Qual deve ser a próxima enquete do site?"
+ \end{quote}
+
+As perguntas dispostas serão analisadas e as que foram consideradas de bom gosto, serão utilizadas. A cada dia, uma nova questão será aprensentada
+para a enquente. Essa nova enquente será publicada e compartilhada. Após 48 horas, esta será dada como finalizada e o resutaldo será apresentado
+para o público. 
+
+Este ciclo será mantido por duas semanas, possibilitando com que sejam elaborados materias suficientes para recolher os indicadores que necessitamos 
+das técnicas de gamificação da rede social.
 \subsubsection{Finalizar a Solução}
 \label{sub:definir_tecnologia}
+
+Após duas semanas de uso da solução proposta, os dados serão recolhidos e o servidor será desligado para evitar gastos. O domínio continuará em operação
+por mais um ano, porém, não apontará para um endereço de IP válido, pois, o servidor que conterá o endereço externo não estará mais em operação.
+
+Este será o tempo necessário para implantar e recolher todas as informações propostas para o uso da solução de projeto piloto.
+
 
 
 
