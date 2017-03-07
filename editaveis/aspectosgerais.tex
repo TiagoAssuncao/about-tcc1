@@ -216,7 +216,7 @@ A proposta de marketing seguirá algumas diretivas que serão apresentadas a seg
 
 Assim, todas as novas enquetes irão seguir os padrões estabelecidos nestas diretrízes de regras de marketing. Isto irá assegurar que
 o público alvo escolhido seja aumejado.
- 
+
 
 \subsubsection{Manter a Solução}
 \label{sub:definir_tecnologia}
@@ -280,13 +280,395 @@ Além disso, as respostas serão transcrevidas para o relatório.
 
 \subsection{Survey das Técnicas}
 \label{sub:survey_das_t_cnicas}
+Com o intuito de analisar as motivações básicas em questão de quanto é necessário para que esta se enquadre no projeto
+de gamificação, iremos aplicar um survey com várias técnias oriundas do octalysis. Essas técnicas serão submetidas à alguns
+usuários do protótipo para avaliarem o quanto aquela técnica se enquadra dentro do escopo. Essas técnicas serão julgadas de 1
+a 5. Sendo que da mesma forma para que a avaliação das ferramentas e frameworks, serão atribuídas às técnicas com
+muita presença a nota cinco e para as técnicas com pouca presença a nota um. Sendo assim, os valores intermediários
+também representam presenças intermediárias destes, na mesma proporção.
+
+As técnicas que serão aplicadas já foram selecionadas no framework. Elas serão as seguintes listadas a seguir:
+
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item Narrative
+        \item Beginner's Luck
+        \item Free Lunch
+        \item Elitism
+        \item Humanity Hero
+        \item Higher Meaning
+        \item Destiny Child
+        \item Status Points/Points
+        \item Achievement Symbols/ Badges
+        \item Leaderboards
+        \item Progress Bar
+        \item Glowing Choice
+        \item Desert Oasis
+        \item The Rockstar Effect
+        \item Fixed Actions Rewards/Earned Lunch
+        \item Quest List
+        \item High Five
+        \item Crowning
+        \item LevelUp Symphony
+        \item Aura Effect
+        \item Step-by-Step Tutorial
+        \item Boss Fight
+        \item Evergreen Mechanics
+        \item General's Carrot
+        \item Real-Time Control
+        \item Chain Combos
+        \item Instant Feedback
+        \item Blank Fills
+        \item Voluntary Autonomy
+        \item Choice Perception/Poison Picker
+        \item Plant Picker/ Meaningful Choices
+        \item Milestone Unlock
+        \item Boosters
+        \item Virtual Goods
+        \item Build from Scratch
+        \item Collection Set
+        \item Exchangeable Points
+        \item Monitor Attachment
+        \item The Alfred Effect
+        \item Mentorship
+        \item Bragbuttons
+        \item Trophyshelves
+        \item Group Quest
+        \item Social Treasures
+        \item Social Proud
+        \item Conformy Anchor
+        \item Water Cooler
+        \item Friending
+        \item SeeSaw Bump
+        \item Touting
+        \item Bragging
+        \item Thank-You Economy
+        \item Dangling
+        \item Ancored Juxtaposition
+        \item Prize Pacing
+        \item Options Pacing
+        \item Patient Feedback
+        \item Count Down
+        \item Throttles
+        \item Moats
+        \item TortureBreak
+        \item Envolved UI
+        \item Glowing Choice
+        \item Mystery Boxes/ Random Rewards
+        \item Easter Eggs
+        \item Sudden Rewards
+        \item Visual Storytelling
+        \item Obvious Wonder
+        \item Rolling Rewards
+        \item Mischief Puzzle
+        \item Oracle Effect
+        \item Lottery (Rolling Rewards)
+        \item Mini Quests
+        \item Countdown Timer
+        \item Status Quo Sloth
+        \item FOMO Ponch
+        \item Sunk-Cost Tragedy
+        \item Lost Progress
+        \item Scarlett Letter
+        \item Visual Grave
+    \end{enumerate}
+\end{multicols}
+
+Agora, como será mapeado o quanto cada motivação básica está presente no projeto piloto? Simples, como dito antes,
+cada técnica pertence a uma motivação básica. Desta forma, será simples mapear o quanto cada técnica estará presente.
+
+Como citado anteriormente, existem oito motivações básicas, e cada uma agloba um conjunto de técnicas. As oito motivações básicas são as seguintes:
+
+\begin{enumerate}
+    \item Significado Épico \& Chamado
+    \item Desenvolvimento \& Realização
+    \item Empoderamento \& Feedback
+    \item Propriedade \& Posse
+    \item Influência Social \& Pertencimento
+    \item Escassez \& Impaciência
+    \item Imprevisibilidade \& Curiosidade
+    \item Perda \& Rejeição
+\end{enumerate}
+
+Como se dará o cálculo para verificar a presença de uma motivação básica na aplicação?
+
+Uma média simples poderia atender a identificação das motivações básicas, dada pela seguinte fórmula: \\ \\
+
+
+$ MediaCadaMotivacao = \frac{PontosTotais}{QuantidadeMotivacoes} $
+
+$ PontosMotivacao = \frac{MediaCadaMotivacao}{\sum PontosCadaMotivacao} $
+
+
+$Onde:
+\\ \\$
+QuantidadeMotivacoes = 8
+\\ PontosTotais = Somatório do máximo de pontos possíveis dentro da votação.
+\\ MediaCadaMotivacao = Média aritmética de quantos pontos máximos cada motivação pode conter.
+\\ PontosCadaMotivacao = Quantidade de pontos obtida pela votação.
+\\ PontosMotivacao = Percentagem de pontos que a motivação possui. \\ \\
+
+
+ Porém, observamos que esta média se torna injusta com algumas motivações e compromete o resultado final.
+Isso ocorre pois  algumas motivações básicas possuem mais técnicas do que outras, fazendo com que
+as que possuem poucas técnicas consigam somar uma baixa quantidade de pontos para aplicar no percentual final perante
+à média de todas as outras.
+
+Desta forma, para que as médias sejam relativas dentro de cada motivação, foi decidido que as médias serião avaliadas dentro da
+própria motivação. Desta forma, será executado um cálculo para cada motivação, onde o objetivo é identificar quais são
+as suas respectivas notas máximas possíveis. Logo após, serão executadas contagens dos pontos de cada motivação quanto à votação.
+Esses dados serão utilizados para resultar a média, dividido os pontos totais pelos pontos de votação. 
+
+Desta forma, a equação para calcular a média de cada pontuação se dará como o descrito a seguir:
+
+$PontosMotivação = \frac{\sum PontoMáximo}{PontosCadaMotivacao}\\Onde:$
+
+PontoMáximo = Quantidade máxima de ponto dentro de cada técnica.
+
+
+Desta forma, teremos total certeza que cada motivação básica terá a sua nota justa perante todas as demais e não será prejudicada
+pela sua quantidade. Assim, será possível aplicar estas fórmulas para obter os dados corretamente.
+
+Através dos dados utilizando as médias, será possível desenhar um primeiro esboço do framework, identificando quais são as motivações
+básicas que os usuários mais conseguem ver na aplicação. 
+
+O criador do Octalasys implementou e disponibilzou uma ferramenta para executar desenhos da forma como o framework está implementado
+de acordo com o quão presentes são algumas técnicas. Esta aplicação pode ser vista no site oficial do framework.
+
+Abaixo está ilustrada um exemplo da ilustração do frameworuma ferramenta para executar desenhos da forma como o framework está implementado
+de acordo com o quão presentes são algumas técnicas. Esta aplicação pode ser vista no site oficial do framework.
+
+A Figura \ref{fig:exoctalysis} está ilustrada um exemplo da ilustração do framework.
+
+ \begin{figure}[h]
+     \centering
+
+     \includegraphics[width=300px, scale=1]{figuras/exoctalysis}
+     \caption{Exemplo do framework octalysis}
+
+     \label{fig:exoctalysis}
+ \end{figure}
+
+
+Nela, podemos observar que cada motivação básica possui algum valor atribuído, e isto representa o quanto desta existe no escopo que
+está sendo testado. O percentual de quanto cada motivação básica é importante estará representado na Tabela \ref{exmotivacao}:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+\centering
+\caption{Índice de presença das motivações: exemplo}
+\label{exmotivacao}
+\begin{tabular}{@{}|c|c|@{}}
+\toprule
+\textbf{Motivação Básica}          & \textbf{\begin{tabular}[c]{@{}c@{}}Porcentagem\\ (\%)\end{tabular}} \\ \midrule
+Significado Épico \& Chamado       & 100                                                                 \\ \midrule
+Desenvolvimento \& Realização      & 60                                                                  \\ \midrule
+Empoderamento \& Feedback          & 40                                                                  \\ \midrule
+Propriedade \& Posse               & 90                                                                  \\ \midrule
+Influência Social \& Pertencimento & 40                                                                  \\ \midrule
+Escassez \& Impaciência            & 70                                                                  \\ \midrule
+Imprevisibilidade \& Curiosidade   & 30                                                                  \\ \midrule
+Perda \& Rejeição                  & 30                                                                  \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+Desta forma, será necessário gerar este framework para as médias básicas retiradas do projeto piloto e desenhar esta tabela com os
+seus respectivos valores, que, provavelmente não serão tão precisos quanto aos que foram utilizados no exêmplo.
+
+A figura do framework e a tabela que serão gerados permitiram à quem irá analisar e avaliar o framework ter uma interpretação
+visual dos níveis de motivações básicas no sistema e como elas se relacionam.
+
+Utilizando esses cálculos básicos de média, e com as notas da votação, será possível realizar cálculos estatíticos para a construção
+das análises a respeito das técnicas de gamificação.
 
 
 
 \subsection{Análise Estatística das Técnicas}
 \label{sub:an_lise_estat_stica_das_t_cnicas}
 A partir da massa de dados obtida com o survey, serão executadas análises estatícas a fim de identificar correlações
-entre as regras e permitir que seja possível entender quais são as técnicas mais presentes.
+entre as regras e permitir que seja possível entender quais são as técnicas mais presentes e o mais importante, como
+estas se relacionam entre si, para que seja possível fazer aferições sobre qual técnica está ligada a qual outra.
+
+Para realizar estas análises estatíticas, são necessários alguns passos que serão justificados a seguir:
+
+\begin{enumerate}
+    \item Definir ferramenta para realização das análises estatícas: a massa de dados é consideravelmente grande, devido 
+        a grande quantidade de técnicas valoradas. Assim, utilizar planilhas do excel ou simplesmentes cálculos diretos
+        podem dificutar a utilização, realização e armazenamento de cálculos. Dessa forma, será adotada uma linguagem
+        de script utilizada para análises estatísticas;
+    \item Importação dos dados oriundos do survey;
+    \item Parser dos dados importados;
+    \item Calcular o alpha de cronbach, para averiguar e conseguir estabelecer a confiabilidade do survey analisado;
+    \item Para identificar as relações entre as técnicas, primeiramente, será utilizada a correlação de pearson;
+    \item Sumarizar das correlações de pearson;
+    \item Transformar dos dados da matrix em trasações;
+    \item Calcular o algoritimo apriori, para identificar quais técnicas irão ser diretamente ligadas as outras.
+\end{enumerate}
+    
+Desta forma, nas sessões seguintes, serão detalhados os passos que foram agora pouco pontuados.
+
+\subsubsection{Ferramenta para Estatística}
+\label{sub:ferramenta_para_estat_stica}
+Como foi dito agora pouco, para o escomo que estamos trabalhando, apenas uma planilha excel não será suficiente
+para a manutenção, processamento e armazenamento dos dados obtidos. Dessa forma, será  necessário um processo
+para levantamento da ferramenta que será utilizada.
+
+Nosso escopo irá carecer de alguns requisitos que serão descritos a seguir:
+
+\begin{itemize}
+    \item Suporte à importação de dados em arquivos ods, xls, csv;
+    \item Suporte à exportação de dados em arquivos ods, xls, csv;
+    \item Suporte a algorítimo de cálculo da correlação de peason;
+    \item Suporte a algorítimo de cálculo do alpha de cronbach;
+    \item Suporte a algorítimo de relações apriori;
+    \item Possibilidade de manupulação de matrizes;
+    \item Possibilidade para executar os memos passos consecutivas vezes;
+    \item Flexibilidade para manutenção.
+\end{itemize}
+
+Para tanto, serão levantadas três ferramentas de análise estatística. Estas serão submetidas a uma ficha de avaliação.
+Cada requisito terá uma nota de um a cinco para itens que podem ser valorados, sendo que a ferramenta que melhor pontuar será a escolhida.
+
+A Tabela \ref{avalicaoferramentaestatistica} será utilizada para a avaliação de atributos, sendo que serão
+pontuados entre um e cinco. Sendo que se não possuir o atributo, será adotada a nota 1, e caso possua, será
+atribuída a nota cinco.
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+\centering
+\caption{Avaliação - Ferramenta Estatística}
+\label{my-label}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\multicolumn{1}{|l|}{}                                       & \multicolumn{1}{l|}{\textbf{Ferramenta A}} & \multicolumn{1}{l|}{\textbf{Ferramenta B}} & \multicolumn{1}{l|}{\textbf{Ferramenta C}} \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Manipulação de matrizes}}       & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Comandos repetidas vezes}}      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Flexibilidade de manutenção}}   & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Importação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Importação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Importação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Exportação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Exportação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Exportação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Alpha de Croncach}}             & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Algorítimo Apriori}}            & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Transformação para transações}} & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+\multicolumn{1}{|l|}{\textbf{Correlação de Pearson}}         & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+                                                             &                                            &                                            &                                            \\ \midrule
+\multicolumn{1}{|l|}{Total}                                  & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Após totalizar as pontuações totais das ferramentas, está será selecionada e preparada para a utilização e execução dos cálculos.
+
+Os passos necessários para que a ferramenta esteja apta para o uso das análises dos scripts serão detalhados abaixo:
+
+\begin{enumerate}
+    \item Download da ferramenta através do site oficial;
+    \item Instalção da ferramenta no ambiente local que será desenvolvido o código;
+    \item Adaptação da IDE utilizada pelo desenvolvedor para que seja compatível à ferramenta escolhida.
+\end{enumerate}
+
+Adotados estes passos, a ferramenta estará pronta para receber a aplicação e executar todos os scripts, cálculos que serão
+necessários.
+
+\subsubsection{Importação dos Dados}
+\label{sub:importa_o_dos_dados}
+De antemão, já se tem informação que  os dados do survey serão recolhidos e armazenados em uma planilha de algum dos seguintes tipos:
+
+\begin{itemize}
+    \item Planilhas Excel do Word - XLS;
+    \item Planilhas Calc do Libre - ODS;
+    \item Planilhas Separada por Vírbula - CSV.
+\end{itemize}
+
+Assim, já sabemos que será necessário executar a importação destes dados. Como a ferramenta escolhida tem como pré-requisitos
+essa feature, esta não será uma preocupação, pois sabemos que ela se encarregará da execução deste ponto. Porém, para realizar
+a importação corretamente, serão necessários alguns passos:
+
+\begin{enumerate}
+    \item Executar a instalação dos pacotes necessários para ler os tipos de arquivos citados anteriormente;
+    \item Carregar o pacote a ser utilizado para a importação que ocorrerá;
+    \item Executar a importação dos dados através do arquivo de armazenamento da planilha;
+    \item Armazenar em memória RAM os dados importados.
+\end{enumerate}
+
+\subsubsection{Alpha de Cronbach}
+\label{sub:alpha_de_cronbach}
+Como é possível identificar se os resultados do nosso survey está confiável?
+
+É possível que alguma variável esteja diminuindo o índice de confiabilidade do questionário?
+
+Essas perguntas são facilmente respondidas pelo alpha de cronbach. Este irá identificar entre as regras quais possuem
+um elevado nível de correlação entre si, aferindo através de suas fórmulas qual a confiabilidade do que foi obtido.
+
+O Alpha retorna valores entre um e zero, onde os valeres aceitáveis estão na faixa de 0.6 e 0.9.
+
+Também é possível que o Alpha nos retorne qual seria o novo índice de confiabilidade caso um item específico seja removido.
+Isso permite com que isolando algumas partes do questionário, a confiabilidade melhore.
+
+Alguns passos são necessários para calcular o Alpha. Estes procedimentos serão descritos a seguir:
+
+\begin{enumerate}
+    \item Instalar o módulo para o Alpha de Cronbach;
+    \item Carregar o módulo para o Alpha de Cronbach;
+    \item Remover todos os campos dos dados com valores nulos;
+    \item Remover todos os campos da tabela com números diferentes de [1, 2, 3, 4, 5];
+    \item Habilitar a aplicação para apresentar os cabeçalhos das variáveis;
+    \item Executar a função que executa o cálculo do Alpha;
+    \item Averiguar se o resultado do índice está dentro dos padrões aceitáveis para o Alpha de Cronbach;
+    \item Caso o valor esteja fora dos valores permitidos, desabilite a variável que mais está tendo impácto negativo no indicador,
+        ou seja, remova aquela com o índice mais distante de 0.6 e 0.9, e volte para o item 6.
+    \item Caso o valor esteja satisfatório, passe a considerar para os próximos cálculos apenas as variáveis que foram
+        escolhidas com alta confiabilidade;
+    \item Para que seja possível utilizar um tracking dos resultados posteriormente, estes devem ser exportados para uma planilha.
+        Esta planilha deve ser de algum dos tipos estipulados para a escolha da ferramenta, de modo a garantir que está terá suporte
+        para efetuar uma dada atividade.
+    \item Para melhor organmização do projeto, deverá ser criada uma pasta que armazenará todos os resultados gerados pelo cálculo do Alpha
+        de Cronbach.
+\end{enumerate}
+
+Agora que é possível ter confiablidade nos dados, de acordo com os resultados apresentados pelos algoritimos utilizados, será
+possível
+utilizar outros cálculos para aferir a correlação entre as técnicas.
+
+O primeiro ponto requerido é, a partir dos dados tratados, aplicar a correlação de pearson. Esta correlação irá ilustrar
+quanto cada técnica se assemelha com outra. Esta é representada em uma matriz, contendo em cada célula, um valor que varia entre um
+e zero dizendo o quão etas variáveis são semelhantes. As que possuem correção 1 entre si, são totalmente semelhantes, assim como as que tem
+correlação 0 são totalmente distintas e assim por diante.
+
+Para aferir estes valores será necessário seguir os seguintes passos:
+
+\begin{enumerate}
+    \item Instalar o módulo para a Correlação de Pearson;
+    \item Carregar o módulo  na aplicação para a Correlação de Pearson;
+    \item Executar a função de cálculo de correlação utilizando a matriz com dados confiáveis, obtidos a partir do alpha de cronbach.
+    \item Armazenar em memória o resultado do Alpha
+\end{enumerate}
+
+Após estes passos, será possível armazenar em memória as correlações e resgatá-las, será possível fazer uma sumarização dos dados
+da correlação. Com qual objetivo estes passos serão executados?
+
+Simples, adaptar e melhorar a vizualização dos dados. E, por fim, gerar uma tabela onde seja possível identificar o quanto uma técnica
+se correlaciona com todas as demais. Isto propiciará com que seja possível identificar quais técnicas tem maior índice de correlação
+dentre todas as demais, o que proporcionará ter o poder de descobrir qual técnica é mais influente e se relaciona com todas as demais.
+
+
+Para executar essa sumarização, são necessários alguns passos que serão descritos a seguir:
+
+\begin{itemize}
+    \item Sumarização dos dados da correlação;
+    \item Substituir o quanto cada técnica se relaciona por um valor numérico;
+    \item Efetuar o somatório de pontos de uma data técnica abordada;
+    \item Identificar quantos pontos existem no total;
+    \item Executar o cálculo da média para cada técnica, a fim de identificar o quanto, em porcentagem, cada uma
+        se relaciona com as demais;
+    \item Ordenar todas as técnicas a fim de identificar quais mais se relacionam com todas as demais.
+\end{itemize}
+
+
 
 \subsection{Construção do Framework}
 \label{sub:constru_o_do_framework}
@@ -320,38 +702,38 @@ conforme abaixo (as entradas itálico são \textit{opcionais}; em itálico e
 negrito são \textbf{\textit{essenciais}}):
 
 \begin{description}
-	\item [Pré-textuais] \
+    \item [Pré-textuais] \
 
-	\begin{itemize}
-		\item Capa
-		\item Folha de rosto
-		\item \textit{Dedicatória}
-		\item \textit{Agradecimentos}
-		\item \textit{Epígrafe}
-		\item Resumo
-		\item Abstract
-		\item Lista de figuras
-		\item Lista de tabelas
-		\item Lista de símbolos e
-		\item Sumário
-	\end{itemize}
+        \begin{itemize}
+            \item Capa
+            \item Folha de rosto
+            \item \textit{Dedicatória}
+            \item \textit{Agradecimentos}
+            \item \textit{Epígrafe}
+            \item Resumo
+            \item Abstract
+            \item Lista de figuras
+            \item Lista de tabelas
+            \item Lista de símbolos e
+            \item Sumário
+        \end{itemize}
 
-	\item [Textuais] \
+    \item [Textuais] \
 
-	\begin{itemize}
-		\item \textbf{\textit{Introdução}}
-		\item \textbf{\textit{Desenvolvimento}}
-		\item \textbf{\textit{Conclusões}}
-	\end{itemize}
+        \begin{itemize}
+            \item \textbf{\textit{Introdução}}
+            \item \textbf{\textit{Desenvolvimento}}
+            \item \textbf{\textit{Conclusões}}
+        \end{itemize}
 
-	\item [Pós-Textuais] \
-	
-	\begin{itemize}
-		\item Referências bibliográficas
-		\item \textit{Bibliografia}
-		\item Anexos
-		\item Contracapa
-	\end{itemize}
+    \item [Pós-Textuais] \
+
+        \begin{itemize}
+            \item Referências bibliográficas
+            \item \textit{Bibliografia}
+            \item Anexos
+            \item Contracapa
+        \end{itemize}
 \end{description}
 
 Os aspectos específicos da formatação de cada uma dessas três partes 
@@ -385,10 +767,10 @@ Margens - As margens delimitando a região na qual todo o texto deverá estar
 contido serão as seguintes: 
 
 \begin{itemize}
-	\item Esquerda: 03 cm;
-	\item Direita	: 02 cm;
-	\item Superior: 03 cm;
-	\item Inferior: 02 cm. 
+    \item Esquerda: 03 cm;
+    \item Direita	: 02 cm;
+    \item Superior: 03 cm;
+    \item Inferior: 02 cm. 
 \end{itemize}
 
 \subsection{Numeração de Páginas}
@@ -458,9 +840,9 @@ Após a aprovação em TCC2, o aluno deverá obrigatoriamente apresentar a
 versão final de seu trabalho à Secretaria da FGA na seguinte forma:
 
 \begin{description}
-	\item 01 cópia encadernada para arquivo na FGA;
-	\item 01 cópia não encadernada (folhas avulsas) para arquivo na FGA;
-	\item 01 cópia em CD de todos os arquivos empregados no trabalho;
+    \item 01 cópia encadernada para arquivo na FGA;
+    \item 01 cópia não encadernada (folhas avulsas) para arquivo na FGA;
+    \item 01 cópia em CD de todos os arquivos empregados no trabalho;
 \end{description}
 
 A cópia em CD deve conter, além do texto, todos os arquivos dos quais se 
