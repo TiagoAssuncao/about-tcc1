@@ -1,7 +1,7 @@
 \part{Aspectos Gerais}
 \chapter[Aspectos Gerais]{Aspectos Gerais}
 
-Para a definição do trabalho, oss seguintes
+Para a definição do trabalho, os seguintes
 passos serão estabelecidos a fim de executar proposta:
 
 \begin{enumerate}
@@ -16,15 +16,15 @@ passos serão estabelecidos a fim de executar proposta:
 \section{Execução do Piloto}
 \label{sub:execu_o_do_piloto}
 A ideia sobre a rede social surgiu de uma simples ideia de um aluno de graduação. Desta forma, se até mesmo a
-ideia era impalpável, algumas perguntas surgem sobre a gamificação desta, por exemple:
+ideia era impalpável, algumas perguntas surgem sobre a gamificação desta, por exemplo:
 
 \begin{itemize}
-    \item Como conseguir averiguar como traços de gamificação para ser aplicado?
+    \item Como conseguir averiguar como traços de gamificação para que esta seja aplicada?
     \item Como identificar quais são as motivações básicas que devem ser levadas em consideração?
     \item Para atingir tais motivações, quais são as técnicas que devem ser adotas?
 \end{itemize}
 
-Para responder essas perguntas, que irão servir de insumo para o direcionamento dos pilares da gamificação, será elaborado um projeto pilotor, tal qual terá algumas funcionalidades básicas da RSA, sem levar em consideração requisitos não funcionais como: segurança, usabilidade, performance e padrões de design.
+Para responder essas perguntas, que irão servir de insumo para o direcionamento dos pilares da gamificação, será elaborado um projeto piloto, tal qual terá algumas funcionalidades básicas da RSA, sem levar em consideração requisitos não funcionais como: segurança, usabilidade, performance e padrões de design.
 
 O objetivo é proporcionar aos usuários um cenário similar, quanto a funcionalidade, ao que estes irão utilizar
 na RSA, a fim de identificar quais as técnicas de gamificação são mais presentes.
@@ -48,32 +48,32 @@ Estes pontos necessários para que a implementação da solução do projeto pil
 \label{sub:definir_tecnologia}
 Como o desenvolvimento da solução para o projeto piloto não necessita conter interfaces com design bem elaborado;
 usabilidade, baseado em user experience, elavada; dentre outras necessidades não funcionais. Os critérios levados em
-consideração para a sua construção foram os seguintes:
+consideração para a sua construção serão os seguintes:
 
 \begin{itemize}
-    \item Desenvolvimento rápido: por se tratar de uma simples solução, temporária, o tempo de implementação deveria
-        ser curto, levantando o requisito de utilizar um framework de alta produtividade.
+    \item Desenvolvimento rápido: por se tratar de uma simples solução, temporária, o tempo de implementação deverá
+        ser curto, relevando o requisito de utilizar um framework de alta produtividade de forma escalável.
     \item Padrões de Design simples: por se tratar de uma aplicação extremamente funcional, tal que o usuário não irá
         utilizá-la por muito tempo, não há a necessidade de fortes esforços e grande elaboração dos padrões de
         User Experience.
     \item Escalabilidade baixa: como se trata de um público pequeno, para poucos usuários simultâneos, em torno de duzentos
-        acessos diários, o framework pode ser de baixo desenpenho, facilitanto assim a sua escolha.
+        acessos diários, o framework pode ser de baixo desempenho, facilitando assim a sua escolha.
     \item Os usuários não carecem de executar cadastros e logins: para o escopo do piloto, cada usuário não necessitará
         fazer registros e logins no site. A política de gerenciamento dos votos será feita mediante armazenamento dos
         IP's utilizados durante o acesso, fazendo com que cada IP possa votar apenas uma vez dentro de um determinado
         intervalo de tempo.
-    \item Suporte para questionários: como o piloto se trata de quistionários baseados em perguntas, há a necessidade que o framework
-        escolhido conceda suporte para criação de perguntas, possibilidade de votação, vizualização e contagem dos votos
+    \item Suporte para questionários: como o piloto se trata de questionários baseados em perguntas, há a necessidade que o framework
+        escolhido conceda suporte para criação de perguntas, possibilidade de votação, visualização e contagem dos votos
         separados por perguntas.
     \item Facilidade de implantação: como se trata de um site web bem rápido, há a necessidade de que este seja de fácil e rápida
-        implantação, possibilitando que rápidamente seja colocado em produção. Dessa forma, o framework escohido também carece
+        implantação, possibilitando que rápidamente seja colocado em produção. Dessa forma, o framework escolhido também carece
         de propiciar suporte para esta feature.
 \end{itemize}
 
-Dados os requisitos acima, irá se iniciar um processo de busca por ferramentas e frameworks que possibilitem a implentação do site
+Dados os requisitos acima, irá se iniciar um processo de busca por ferramentas e frameworks que possibilitem a implementação do site
 web que os contemple. Para a avaliação, as ferramentas levantadas, que serão até cinco, irão ser submetidas à uma tabela que contempla
-os requisitos básicos necessários. Cada item da tabela poderá ser julgado de um a cinco, sendo que a nota 1 diz que a ferramenta não nada
-desta funcionalidade, já a nota 5 diz que esta contém totalemente esta funcionalidade. Assim, os valores intermediários: 2, 3 e 4 representam
+os requisitos básicos necessários. Cada item da tabela poderá ser julgado de um a cinco, sendo que a nota 1 diz que a ferramenta não possui
+nada desta funcionalidade, já a nota 5 diz que esta contém totalemente esta funcionalidade. Assim, os valores intermediários: 2, 3 e 4 representam
 que possuem o requisito parcialmente, de acordo com a nota.
 
 % \usepackage{booktabs}
@@ -83,7 +83,7 @@ que possuem o requisito parcialmente, de acordo com a nota.
         \toprule
         \textbf{}                                                  & \textbf{Tool A}       & \textbf{Tool B}       & \textbf{Tool C}       & \textbf{Tool D}       & \textbf{Tool E}       \\ \midrule
         \multicolumn{1}{|l|}{\textbf{Desenvolvimento Rápido}}      & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Padrões de Design Simpels}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+        \multicolumn{1}{|l|}{\textbf{Padrões de Design Simples}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
         \multicolumn{1}{|l|}{\textbf{Sem Autenticação}}            & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
         \multicolumn{1}{|l|}{\textbf{Baixa Escalabilidade}}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
         \multicolumn{1}{|l|}{\textbf{Suporte para Questionário}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
@@ -100,7 +100,7 @@ Cada ferramenta, no final da avaliação, terá uma nota entre 6 e 30, que será
 \subsection{Desenvolver Solução}
 \label{sub:definir_tecnologia}
 
-Dada a ferramenta escolhida, faz-se necessário que esta seja analizada em termos técnicos. Será necessário analisar e seguir alguns pontos, que
+Dada a ferramenta escolhida, faz-se necessário que esta seja analisada em termos técnicos. Será necessário analisar e seguir alguns pontos, que
 serão descritos abaixo para que a solução seja implementada com sucesso:
 
 \begin{enumerate}
@@ -110,7 +110,7 @@ serão descritos abaixo para que a solução seja implementada com sucesso:
         desenvolvimento da aplicação;
     \item Definir qual template será utilizado para a página home do site, layout da aplicação e menu principal;
     \item Executar o download do plugin de execução de questionários na página principal do framework que será escolhido;
-    \item Instalar na aplicação o plugin para a criação, manutenção e vizualização dos questionários;
+    \item Instalar na aplicação o plugin para a criação, manutenção e visualização dos questionários;
     \item Configurar plugin de questionários para armazenar as perguntas e os índices de votação de cada pergunta em persistência;
         Para que posteriormente seja possível executar a análise de todos os dados coletados;
     \item Executar a criação de um questionário a fim de homologar a solução desenvolvida para os pré-requisitos estabelecidos. 
@@ -120,7 +120,7 @@ serão descritos abaixo para que a solução seja implementada com sucesso:
 \end{enumerate}
 
 Com todos esses passos executados, a solução está operando de acordo como o esperado para recolher os dados básicos propostos anteriormente.
-Assim, esta está preparada para ser disposta em produção em um servidor e disponibilizá-la para o público geral. Na próxima sessão serão
+Assim, esta será preparada para ser disposta em produção em um servidor e disponibilizá-la para o público geral. Na próxima sessão serão
 detalhados os passos para ter a aplicação em produção.
 
 \subsection{Virá-la para a Produção}
@@ -146,12 +146,12 @@ Os passos necessários para virar o servidor de produção serão descritos nos 
 \end{enumerate}
 
 Estes passos vão assegurar que o servidor seja configurado corretamente e que esteja disponível para acesso externo para
-todos os usuários que vão o sistema.
+todos os usuários que vão utilizar o sistema.
 
 Com os procedimentos necessários para que o projeto piloto esteja acessível pelos usuários, já será possível executar o marketing
 para divulgar a algumas pessoas a aplicação. Os passos para o marketing serão descritos no próximo sub tópico.
 
-\subsection{Aplicar Marketin do projeto piloto}
+\subsection{Aplicar Marketing do projeto piloto}
 \label{sub:definir_tecnologia}
 Como se faz necessário que haja usuários utilizando o protótipo para recolher os dados, é fundamental que o propósito
 e o protótipo sejam divulgados para o público externo que irá utilizá-lo. 
@@ -164,33 +164,33 @@ A proposta de marketing seguirá algumas diretivas que serão apresentadas a seg
         deve ao volume de alunos existentes no campus com disponibilidade para testar novos projetos e ideias.
         Desta maneira, o público alvo serão os universitários da UnB unidade Gama - Distrito federal(UnB-FGA).
     \item Como estamos tratando de um projeto piloto que carece da presença de usuários a utilizando, alguns
-        pontos são extremamente importante para que o público alvo definido seja atingido. Assim, o meio de
+        pontos são extremamente importantes para que o público alvo definido seja atingido. Assim, o meio de
         distribuição do protótipo deve conter os seguintes pontos:
         \begin{itemize}
             \item Ser possível compartilhar os links publicados no protótipo;
-            \item Novas enquentes devem chegar rapidamente ao público alvo;
-            \item Novas enquentes devem ser dispostas em um meio que esteja disponível para todos os
+            \item Novas enquetes devem chegar rapidamente ao público alvo;
+            \item Novas enquetes devem ser dispostas em um meio que esteja disponível para todos os
                 alunos do campus FGA.
         \end{itemize}
     \item Existem vários meios possíveis para alcançar o público alvo, por exemplo:
         \begin{itemize}
             \item Contato direto verbal;
-            \item Cartazes e planfetos no campus;
+            \item Cartazes e panfletos no campus;
             \item Listas de emails;
             \item Sites de fóruns da UnB;
-            \item Sites de devulgação;
+            \item Sites de divulgação;
             \item Grupos e páginas do facebook.
         \end{itemize}
     \item Desta forma, será escolhido o meio de comunicação que atenda de melhor maneira os pré-requisitos descritos acima. Para que
-        seja possível compartilhar links, demonstrar rapidamente novas enquente e com o maior número de estudantes, o melhor meio de
-        comunicação é a utilização do facebook. Utilizando o facebook, é possível utilizar o grupo da faculdade, que contém vários alunos,
+        seja possível compartilhar links, demonstrar rapidamente novas enquete e com o maior número de estudantes, o melhor meio de
+        comunicação é a utilização do facebook. Utilizando o facebook, é possível acessar o grupo da faculdade, que contém vários alunos,
         levantando em consideração que os links podem ser compartilhados por lá. Dessa forma, toda a apresentação do protótipo será executada
         via grupo da faculdade no facebook;
     \item Todas as novas enquetes serão apresentadas no grupo e compartilhadas também no grupo do facebook do campus da faculdade.
 \end{enumerate}
 
 Assim, todas as novas enquetes irão seguir os padrões estabelecidos nestas diretrízes de regras de marketing. Isto irá assegurar que
-o público alvo escolhido seja aumejado.
+o público alvo escolhido seja almejado.
 
 
 \subsection{Manter a Solução}
@@ -199,14 +199,14 @@ Após a construção estabelecida e disponível para que os usuários a utilizem
 Esta etapa consistirá em criar um sistema em que os próprios usuários vão ceder as novas informações para novos questionários. Estes questionários 
 terão as informações coletadas e futuramente utilizadas.
 
-Primeiramente, será criada uma segunda página para o site. Esta página será responsável por conter uma enquente com a seguinte pergunta:
+Primeiramente, será criada uma segunda página para o site. Esta página será responsável por conter uma enquete com a seguinte pergunta:
 
  \begin{quote}
      "Qual deve ser a próxima enquete do site?"
  \end{quote}
 
-As perguntas dispostas serão analisadas e as que foram consideradas de bom gosto, serão utilizadas. A cada dia, uma nova questão será aprensentada
-para a enquente. Essa nova enquente será publicada e compartilhada. Após 48 horas, esta será dada como finalizada e o resutaldo será apresentado
+As perguntas dispostas serão analisadas e as que foram consideradas de bom gosto, serão utilizadas. A cada dia, uma nova questão será apresentada
+para a enquete. Essa nova enquete será publicada e compartilhada. Após 48 horas, esta será dada como finalizada e o resutaldo será apresentado
 para o público. 
 
 Este ciclo será mantido por duas semanas, possibilitando com que sejam elaborados materias suficientes para recolher os indicadores que necessitamos 
@@ -256,7 +256,7 @@ Além disso, as respostas serão transcrevidas para o relatório.
 \section{Survey das Técnicas}
 \label{sub:survey_das_t_cnicas}
 Com o intuito de analisar as motivações básicas em questão de quanto é necessário para que esta se enquadre no projeto
-de gamificação, iremos aplicar um survey com várias técnias oriundas do octalysis. Essas técnicas serão submetidas à alguns
+de gamificação, iremos aplicar um survey com várias técnicas oriundas do octalysis. Essas técnicas serão submetidas à alguns
 usuários do protótipo para avaliarem o quanto aquela técnica se enquadra dentro do escopo. Essas técnicas serão julgadas de 1
 a 5. Sendo que da mesma forma para que a avaliação das ferramentas e frameworks, serão atribuídas às técnicas com
 muita presença a nota cinco e para as técnicas com pouca presença a nota um. Sendo assim, os valores intermediários
@@ -350,9 +350,9 @@ As técnicas que serão aplicadas já foram selecionadas no framework. Elas ser�
 \end{multicols}
 
 Agora, como será mapeado o quanto cada motivação básica está presente no projeto piloto? Simples, como dito antes,
-cada técnica pertence a uma motivação básica. Desta forma, será simples mapear o quanto cada técnica estará presente.
+cada técnica pertence a uma motivação básica. Desta forma, será simples mapear o quanto cada motivação estará presente.
 
-Como citado anteriormente, existem oito motivações básicas, e cada uma agloba um conjunto de técnicas. As oito motivações básicas são as seguintes:
+Como citado anteriormente, existem oito motivações básicas, e cada uma engloba um conjunto de técnicas. As oito motivações básicas são as seguintes:
 
 \begin{enumerate}
     \item Significado Épico \& Chamado
@@ -407,10 +407,10 @@ pela sua quantidade. Assim, será possível aplicar estas fórmulas para obter o
 Através dos dados utilizando as médias, será possível desenhar um primeiro esboço do framework, identificando quais são as motivações
 básicas que os usuários mais conseguem ver na aplicação. 
 
-O criador do Octalasys implementou e disponibilzou uma ferramenta para executar desenhos da forma como o framework está implementado
+O criador do Octalasys implementou e disponibilizou uma ferramenta para executar desenhos da forma como o framework está implementado
 de acordo com o quão presentes são algumas técnicas. Esta aplicação pode ser vista no site oficial do framework.
 
-Abaixo está ilustrada um exemplo da ilustração do frameworuma ferramenta para executar desenhos da forma como o framework está implementado
+Abaixo está ilustrada um exemplo da ilustração do framework,  que possui uma ferramenta para executar desenhos da forma como o framework está implementado
 de acordo com o quão presentes são algumas técnicas. Esta aplicação pode ser vista no site oficial do framework.
 
 A Figura \ref{fig:exoctalysis} está ilustrada um exemplo da ilustração do framework.
@@ -450,43 +450,43 @@ está sendo testado. O percentual de quanto cada motivação básica é importan
 
 
 Desta forma, será necessário gerar este framework para as médias básicas retiradas do projeto piloto e desenhar esta tabela com os
-seus respectivos valores, que, provavelmente não serão tão precisos quanto aos que foram utilizados no exêmplo.
+seus respectivos valores, que, provavelmente não serão tão precisos quanto aos que foram utilizados no exemplo.
 
-A figura do framework e a tabela que serão gerados permitiram à quem irá analisar e avaliar o framework ter uma interpretação
+A figura do framework e a tabela que serão gerados permitirão à quem irá analisar e avaliar o framework ter uma interpretação
 visual dos níveis de motivações básicas no sistema e como elas se relacionam.
 
-Utilizando esses cálculos básicos de média, e com as notas da votação, será possível realizar cálculos estatíticos para a construção
+Utilizando esses cálculos básicos de média, e com as notas da votação, será possível realizar cálculos estatísticos para a construção
 das análises a respeito das técnicas de gamificação.
 
 
 
 \section{Análise Estatística das Técnicas}
 \label{sub:an_lise_estat_stica_das_t_cnicas}
-A partir da massa de dados obtida com o survey, serão executadas análises estatícas a fim de identificar correlações
+A partir da massa de dados obtida com o survey, serão executadas análises estatísticas a fim de identificar correlações
 entre as regras e permitir que seja possível entender quais são as técnicas mais presentes e o mais importante, como
 estas se relacionam entre si, para que seja possível fazer aferições sobre qual técnica está ligada a qual outra.
 
-Para realizar estas análises estatíticas, são necessários alguns passos que serão justificados a seguir:
+Para realizar estas análises estatísticas, são necessários alguns passos que serão justificados a seguir:
 
 \begin{enumerate}
-    \item Definir ferramenta para realização das análises estatícas: a massa de dados é consideravelmente grande, devido 
+    \item Definir ferramenta para realização das análises estatísticas: a massa de dados é consideravelmente grande, devido 
         a grande quantidade de técnicas valoradas. Assim, utilizar planilhas do excel ou simplesmentes cálculos diretos
-        podem dificutar a utilização, realização e armazenamento de cálculos. Dessa forma, será adotada uma linguagem
+        podem dificultar a utilização, realização e armazenamento de cálculos. Dessa forma, será adotada uma linguagem
         de script utilizada para análises estatísticas;
     \item Importação dos dados oriundos do survey;
     \item Parser dos dados importados;
     \item Calcular o alpha de cronbach, para averiguar e conseguir estabelecer a confiabilidade do survey analisado;
     \item Para identificar as relações entre as técnicas, primeiramente, será utilizada a correlação de pearson;
     \item Sumarizar das correlações de pearson;
-    \item Transformar dos dados da matrix em trasações;
-    \item Calcular o algoritimo apriori, para identificar quais técnicas irão ser diretamente ligadas as outras.
+    \item Transformar dos dados da matriz em transações;
+    \item Calcular o algorítimo apriori, para identificar quais técnicas irão ser diretamente ligadas as outras.
 \end{enumerate}
 
 Desta forma, nas sessões seguintes, serão detalhados os passos que foram agora pouco pontuados.
 
 \subsection{Ferramenta para Estatística}
 \label{sub:ferramenta_para_estat_stica}
-Como foi dito agora pouco, para o escomo que estamos trabalhando, apenas uma planilha excel não será suficiente
+Como foi dito agora pouco, para o escopo que estamos trabalhando, apenas uma planilha excel não será suficiente
 para a manutenção, processamento e armazenamento dos dados obtidos. Dessa forma, será  necessário um processo
 para levantamento da ferramenta que será utilizada.
 
@@ -499,7 +499,7 @@ Nosso escopo irá carecer de alguns requisitos que serão descritos a seguir:
     \item Suporte a algorítimo de cálculo do alpha de cronbach;
     \item Suporte a algorítimo de relações apriori;
     \item Possibilidade de manupulação de matrizes;
-    \item Possibilidade para executar os memos passos consecutivas vezes;
+    \item Possibilidade para executar os mesmos passos consecutivas vezes;
     \item Flexibilidade para manutenção.
 \end{itemize}
 
@@ -514,7 +514,7 @@ atribuída a nota cinco.
 \begin{table}[]
     \centering
     \caption{Avaliação - Ferramenta Estatística}
-    \label{my-label}
+    \label{avalicaoferramentaestatistica}
     \begin{tabular}{@{}llll@{}}
         \toprule
         \multicolumn{1}{|l|}{}                                       & \multicolumn{1}{l|}{\textbf{Ferramenta A}} & \multicolumn{1}{l|}{\textbf{Ferramenta B}} & \multicolumn{1}{l|}{\textbf{Ferramenta C}} \\ \midrule
@@ -542,7 +542,7 @@ Os passos necessários para que a ferramenta esteja apta para o uso das análise
 
 \begin{enumerate}
     \item Download da ferramenta através do site oficial;
-    \item Instalção da ferramenta no ambiente local que será desenvolvido o código;
+    \item Instalação da ferramenta no ambiente local que será desenvolvido o código;
     \item Adaptação da IDE utilizada pelo desenvolvedor para que seja compatível à ferramenta escolhida.
 \end{enumerate}
 
@@ -594,18 +594,18 @@ Alguns passos são necessários para calcular o Alpha. Estes procedimentos serã
     \item Habilitar a aplicação para apresentar os cabeçalhos das variáveis;
     \item Executar a função que executa o cálculo do Alpha;
     \item Averiguar se o resultado do índice está dentro dos padrões aceitáveis para o Alpha de Cronbach;
-    \item Caso o valor esteja fora dos valores permitidos, desabilite a variável que mais está tendo impácto negativo no indicador,
+    \item Caso o valor esteja fora dos valores permitidos, desabilite a variável que mais está tendo impacto negativo no indicador,
         ou seja, remova aquela com o índice mais distante de 0.6 e 0.9, e volte para o item 6.
     \item Caso o valor esteja satisfatório, passe a considerar para os próximos cálculos apenas as variáveis que foram
         escolhidas com alta confiabilidade;
     \item Para que seja possível utilizar um tracking dos resultados posteriormente, estes devem ser exportados para uma planilha.
         Esta planilha deve ser de algum dos tipos estipulados para a escolha da ferramenta, de modo a garantir que está terá suporte
         para efetuar uma dada atividade.
-    \item Para melhor organmização do projeto, deverá ser criada uma pasta que armazenará todos os resultados gerados pelo cálculo do Alpha
+    \item Para melhor organização do projeto, deverá ser criada uma pasta que armazenará todos os resultados gerados pelo cálculo do Alpha
         de Cronbach.
 \end{enumerate}
 
-Agora que é possível ter confiablidade nos dados, de acordo com os resultados apresentados pelos algoritimos utilizados, será
+Agora que é possível ter confiabilidade nos dados, de acordo com os resultados apresentados pelos algorítimos utilizados, será
 possível
 utilizar outros cálculos para aferir a correlação entre as técnicas.
 
@@ -626,7 +626,7 @@ Para aferir estes valores será necessário seguir os seguintes passos:
 Após estes passos, será possível armazenar em memória as correlações e resgatá-las, será possível fazer uma sumarização dos dados
 da correlação. Com qual objetivo estes passos serão executados?
 
-Simples, adaptar e melhorar a vizualização dos dados. E, por fim, gerar uma tabela onde seja possível identificar o quanto uma técnica
+Simples, adaptar e melhorar a visualização dos dados. E, por fim, gerar uma tabela onde seja possível identificar o quanto uma técnica
 se correlaciona com todas as demais. Isto propiciará com que seja possível identificar quais técnicas tem maior índice de correlação
 dentre todas as demais, o que proporcionará ter o poder de descobrir qual técnica é mais influente e se relaciona com todas as demais.
 
@@ -643,11 +643,11 @@ Para executar essa sumarização, são necessários alguns passos que serão des
     \item Ordenar todas as técnicas a fim de identificar quais mais se relacionam com todas as demais.
 \end{itemize}
 
-Desta forma, todos os dados relativos à correlação de pearson já estarão identificados. Estes devem ser amazenados em persistência,
+Desta forma, todos os dados relativos à correlação de pearson já estarão identificados. Estes devem ser armazenados em persistência,
 em uma tabela de um dos tipos suportados pela ferramenta. Desta forma, agora será possível executar os procedimenos para aplicar
-o algoritimo apriori.
+o algorítimo apriori.
 
-O algoritimo apriori irá possibilitar que seja possível vizualizar algumas regras, com uma confiabilidade estabelecida,
+O algorítimo apriori irá possibilitar que seja possível visualizar algumas regras, com uma confiabilidade estabelecida,
 quanto às técnicas a nível de:
 \begin{itemize}
     \item Toda vez em que a técnica X ocorrer, a Y também irá ocorrer.
@@ -662,12 +662,12 @@ Desta forma, alguns passos devem ser executados para que o apriori seja corretam
     \item Transformar todos os valores da tabela de dados em 0 e 1, fazendo com que as notas abaixo de três
         sejam transformadas para um e as maiores, para cinco;
     \item Executar a transformação das células da tabela de dados em transações;
-    \item Executar o algoritimo apriori e armazenar o resultado em memória RAM;
-    \item Sumarizar os dados recebidos do algoritimo e armazená-los em uma planilha com o suporte
+    \item Executar o algorítimo apriori e armazenar o resultado em memória RAM;
+    \item Sumarizar os dados recebidos do algorítimo e armazená-los em uma planilha com o suporte
         estabelecido.
 \end{enumerate}
 
-Este resultado irá permitir com que seja possível idetificar as regras de existências das técnicas. Assim, será possível fazer
+Este resultado irá permitir com que seja possível identificar as regras de existências das técnicas. Assim, será possível fazer
 a ligação sobre: quais regras sempre acontecem quando as duas técnicas que mais tem correlação com as demais, a partir de pearson,
 por exemplo, também acontecem.
 
@@ -692,10 +692,10 @@ Após os dados das correlações de pearson e apriori, conseguimos identificar, 
 que sempre acontecem quando alguma das técnicas que mais tem correlação entre as demais também acontecem.
 
 Assim, serão atribuídos pontos para cada motivação básica de acordo com a soma dos pontos das técnicas primários, obtidas pelo ranking da
-tabela da correlação de pearsonm, e das técnicas secundárias, obtidas pelo algoritimo apriori, como foi dito anteriormente.
+tabela da correlação de pearsonm, e das técnicas secundárias, obtidas pelo algorítimo apriori, como foi dito anteriormente.
 
 Dessa forma, com os pontos obtidos de cada motivação, serão levantados pontos e valores, possibilitando a criação de um novo framework,
-basedo nas principais motivações e técnicas que devem ser presentes no framework.
+baseado nas principais motivações e técnicas que devem ser presentes no framework.
 
 \section{Objeto de Gamificação}
 \label{sub:objeto_de_gamifica_o}
@@ -708,7 +708,7 @@ Este objeto será alvo das técnicas e das implementações para desenvolver as 
 \label{sub:implementa_o_das_t_cnicas}
 A partir do objeto escolhido, será possível implementar o código que fará a RSA ser gamificada.
 
-Será criado um módulo na apclicação responsável por gerir, apresentar, interagir e relatar análises
+Será criado um módulo na aplicação responsável por gerir, apresentar, interagir e relatar análises
 dos componentes de gamificação que serão executados. Mas como são estes módulos? Quais as restrições existentes?
 
 A solução destes pontos serão definidas e exclarecidos a seguir:
@@ -725,12 +725,12 @@ A solução destes pontos serão definidas e exclarecidos a seguir:
 Para a execução da rede social, o critério utilizado será a familiaridade do desenvolvedor para com a tecnologia
 utilizada. Desta forma, o  ponto mais conhecido pelo desenvolvedor em questão é o Python 3.5. Assim, este será adotado.
 
-O django será utilizando, pois como a RSA irá utilizar vários módulos e ferramentas, uma ferramenta  basntante completa
+O django será utilizando, pois como a RSA irá utilizar vários módulos e ferramentas, uma ferramenta  bastante completa
 se faz mais útil do que o flask, que é reduzido é pequeno. Desta forma, essa será a escolha para que o desenvolvimento seja
 realizado com êxito.
 
 Como estamos tratando de um código extenso, será necessário manter a manutenabilidade deste, possibilitando a reutilização dos
-módulos. Desta forma, será desenvolvido um App django que conterá todas as diretívas necessárias para implementar os módulos, que serão aplicados
+módulos. Desta forma, será desenvolvido um App django que conterá todas as diretivas necessárias para implementar os módulos, que serão aplicados
 nos objetos de gamificação.
 
 Por fim, para suportar tudo o que será elaborado no código, com boas libs implementadas e bem documentadas, será o framework citado
@@ -742,7 +742,7 @@ assim suas tecnologias e boas práticas.
 
 \subsection{Método de Desenvolvimento}
 \label{sub:m_todo_de_desenvolvimento}
-Assim, será adotado um método de avaliação de circúlos de desenvolvimento, para que seja possível escolher o melhor.
+Assim, será adotado um método de avaliação de círculos de desenvolvimento, para que seja possível escolher o melhor.
 O ciclo de desenvolvimento adotado que será adotado deve ter os seguintes fatores:
 
 \begin{enumerate}
@@ -754,7 +754,7 @@ O ciclo de desenvolvimento adotado que será adotado deve ter os seguintes fator
     \item Reuniões presencias devem ocorrer em um período de até uma semana.
 \end{enumerate}
 
-Assim, é possível elavorar uma outra tabela para a avaliação dos frameworks possíveis. Esta tabela terá exatamente
+Assim, é possível elaborar uma outra tabela para a avaliação dos frameworks possíveis. Esta tabela terá exatamente
 o mesmo padrão de votação conforme os utilizados anteriormente, com valores entre um e cinco.
 
 A tabela conterá três ferramentas. Estas, serão julgadas quanto a qualide de atender uma dada feature, como por exemplo,
