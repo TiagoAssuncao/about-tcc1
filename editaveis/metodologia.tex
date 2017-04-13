@@ -1,16 +1,10 @@
 \chapter[Metodologia]{Metodologia}
 
 Para a definição do trabalho, os seguintes
-passos serão estabelecidos a fim de executar proposta:
-
-\begin{enumerate}
-    \item Execução do teste piloto
-    \item Survey para identificação das técnicas de gamificação
-    \item Análise estatística das técnicas
-    \item Construção do framework de gamificação
-    \item Escolha do objeto de gamificação
-    \item Implementação das técnicas no objeto de gamificação
-\end{enumerate}
+passos serão estabelecidos a fim de executar proposta, cada um será
+descrito em uma subsessão: Execução do teste piloto , Survey para identificação das técnicas de gamificação
+, Análise estatística das técnicas , Construção do framework de gamificação , Escolha do objeto de gamificação
+, Implementação das técnicas no objeto de gamificação.
 
 \section{Execução do Piloto}
 \label{sub:execu_o_do_piloto}
@@ -41,7 +35,8 @@ Para desenvolver e aplicar este piloto, será necessário executar um procedimen
     \item Finalizar solução
 \end{itemize}
 
-Estes pontos necessários para que a implementação da solução do projeto piloto serão detalhados a seguir:
+Estes pontos necessários para que a implementação da solução do projeto piloto serão detalhados 
+nas subsessões a seguir:
 
 \subsection{Definir Tecnologia}
 \label{sub:definir_tecnologia}
@@ -69,33 +64,46 @@ consideração para a sua construção serão os seguintes:
         de propiciar suporte para esta feature.
 \end{itemize}
 
-Dados os requisitos acima, irá se iniciar um processo de busca por ferramentas e frameworks que possibilitem a implementação do site
-web que os contemple. Para a avaliação, as ferramentas levantadas, que serão até cinco, irão ser submetidas à uma tabela que contempla
-os requisitos básicos necessários. Cada item da tabela poderá ser julgado de um a cinco, sendo que a nota 1 diz que a ferramenta não possui
-nada desta funcionalidade, já a nota 5 diz que esta contém totalemente esta funcionalidade. Assim, os valores intermediários: 2, 3 e 4 representam
-que possuem o requisito parcialmente, de acordo com a nota.
+Dados os requisitos acima, os seguintes itens serão ponderados para a escolha da ferramenta:
+\begin{itemize}
+    \item Desenvolvimento Rápido
+    \item Padrões de Design Simples
+    \item Sem Autenticação
+    \item Baixa Escalabilidade
+    \item Suporte para Questionário
+    \item Facilidade de Implementação
+\end{itemize}
 
-% \usepackage{booktabs}
-\begin{table}[]
-    \centering
-    \begin{tabular}{@{}llllll@{}}
-        \toprule
-        \textbf{}                                                  & \textbf{Tool A}       & \textbf{Tool B}       & \textbf{Tool C}       & \textbf{Tool D}       & \textbf{Tool E}       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Desenvolvimento Rápido}}      & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Padrões de Design Simples}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Sem Autenticação}}            & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Baixa Escalabilidade}}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Suporte para Questionário}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Facilidade de Implementação}} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
-                                                                   &                       &                       &                       &                       &                       \\ \midrule
-                                                                   \multicolumn{1}{|l|}{\textbf{Total}}                       & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \bottomrule
-    \end{tabular}
-    \caption{Avaliação dos Frameworks}
-    \label{my-label}
-\end{table}
+Dessa forma, o framework escolhido e estipulado para a aplicação do
+piloto da About é o WordPress, que possui o desenvolvimento rápido e
+muita documentação no mercado.
 
-Cada ferramenta, no final da avaliação, terá uma nota entre 6 e 30, que será disposta na linha 'Total'. Assim, a ferramenta que possuir a maior nota será escolhida para a execução do projeto piloto.
+% web que os contemple. Para a avaliação, as ferramentas levantadas, que serão até cinco, irão ser submetidas à uma tabela que contempla
+% os requisitos básicos necessários. Cada item da tabela poderá ser julgado de um a cinco, sendo que a nota 1 diz que a ferramenta não possui
+% nada desta funcionalidade, já a nota 5 diz que esta contém totalemente esta funcionalidade. Assim, os valores intermediários: 2, 3 e 4 representam
+% que possuem o requisito parcialmente, de acordo com a nota.
+%
+% % \usepackage{booktabs}
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{@{}llllll@{}}
+%         \toprule
+%         \textbf{}                                                  & \textbf{Tool A}       & \textbf{Tool B}       & \textbf{Tool C}       & \textbf{Tool D}       & \textbf{Tool E}       \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Desenvolvimento Rápido}}      & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Padrões de Design Simples}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Sem Autenticação}}            & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Baixa Escalabilidade}}        & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Suporte para Questionário}}   & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Facilidade de Implementação}} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \midrule
+%                                                                    &                       &                       &                       &                       &                       \\ \midrule
+%                                                                    \multicolumn{1}{|l|}{\textbf{Total}}                       & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} & \multicolumn{1}{l|}{} \\ \bottomrule
+%     \end{tabular}
+%     \caption{Avaliação dos Frameworks}
+%     \label{my-label}
+% \end{table}
 
+% Cada ferramenta, no final da avaliação, terá uma nota entre 6 e 30, que será disposta na linha 'Total'. Assim, a ferramenta que possuir a maior nota será escolhida para a execução do projeto piloto.
+%
 \subsection{Desenvolver Solução}
 \label{sub:definir_tecnologia}
 
@@ -502,40 +510,45 @@ Nosso escopo irá carecer de alguns requisitos que serão descritos a seguir:
     \item Flexibilidade para manutenção.
 \end{itemize}
 
-Para tanto, serão levantadas três ferramentas de análise estatística. Estas serão submetidas a uma ficha de avaliação.
-Cada requisito terá uma nota de um a cinco para itens que podem ser valorados, sendo que a ferramenta que melhor pontuar será a escolhida.
+Para tanto, foi executada uma pesquisa sobre as ferramentas de análise estatística
+disponíveis e verificou-se que a que mais se enquadra nos padrões solicitados
+é a Rscript, contento todos os pontos e requisitos requeridos para a
+avaliação dos dados.
 
-A Tabela \ref{avalicaoferramentaestatistica} será utilizada para a avaliação de atributos, sendo que serão
-pontuados entre um e cinco. Sendo que se não possuir o atributo, será adotada a nota 1, e caso possua, será
-atribuída a nota cinco.
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[]
-    \centering
-    \caption{Avaliação - Ferramenta Estatística}
-    \label{avalicaoferramentaestatistica}
-    \begin{tabular}{@{}llll@{}}
-        \toprule
-        \multicolumn{1}{|l|}{}                                       & \multicolumn{1}{l|}{\textbf{Ferramenta A}} & \multicolumn{1}{l|}{\textbf{Ferramenta B}} & \multicolumn{1}{l|}{\textbf{Ferramenta C}} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Manipulação de matrizes}}       & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Comandos repetidas vezes}}      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Flexibilidade de manutenção}}   & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Importação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Importação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Importação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Exportação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Exportação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Exportação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Alpha de Croncach}}             & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Algorítimo Apriori}}            & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Transformação para transações}} & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Correlação de Pearson}}         & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
-                                                             &                                            &                                            &                                            \\ \midrule
-        \multicolumn{1}{|l|}{Total}                                  & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-Após totalizar as pontuações totais das ferramentas, está será selecionada e preparada para a utilização e execução dos cálculos.
+% Para tanto, serão levantadas três ferramentas de análise estatística. Estas serão submetidas a uma ficha de avaliação.
+% Cada requisito terá uma nota de um a cinco para itens que podem ser valorados, sendo que a ferramenta que melhor pontuar será a escolhida.
+%
+% A Tabela \ref{avalicaoferramentaestatistica} será utilizada para a avaliação de atributos, sendo que serão
+% pontuados entre um e cinco. Sendo que se não possuir o atributo, será adotada a nota 1, e caso possua, será
+% atribuída a nota cinco.
+% % Please add the following required packages to your document preamble:
+% % \usepackage{booktabs}
+% \begin{table}[]
+%     \centering
+%     \caption{Avaliação - Ferramenta Estatística}
+%     \label{avalicaoferramentaestatistica}
+%     \begin{tabular}{@{}llll@{}}
+%         \toprule
+%         \multicolumn{1}{|l|}{}                                       & \multicolumn{1}{l|}{\textbf{Ferramenta A}} & \multicolumn{1}{l|}{\textbf{Ferramenta B}} & \multicolumn{1}{l|}{\textbf{Ferramenta C}} \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Manipulação de matrizes}}       & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Comandos repetidas vezes}}      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Flexibilidade de manutenção}}   & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Importação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Importação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Importação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Exportação CSV}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Exportação XLS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Exportação ODS}}                & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Alpha de Croncach}}             & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Algorítimo Apriori}}            & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Transformação para transações}} & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%         \multicolumn{1}{|l|}{\textbf{Correlação de Pearson}}         & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \midrule
+%                                                              &                                            &                                            &                                            \\ \midrule
+%         \multicolumn{1}{|l|}{Total}                                  & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      & \multicolumn{1}{l|}{}                      \\ \bottomrule
+%     \end{tabular}
+% \end{table}
+%
+% Após totalizar as pontuações totais das ferramentas, está será selecionada e preparada para a utilização e execução dos cálculos.
 
 Os passos necessários para que a ferramenta esteja apta para o uso das análises dos scripts serão detalhados abaixo:
 
@@ -753,34 +766,17 @@ O ciclo de desenvolvimento adotado que será adotado deve ter os seguintes fator
     \item Reuniões presencias devem ocorrer em um período de até uma semana.
 \end{enumerate}
 
-Assim, é possível elaborar uma outra tabela para a avaliação dos frameworks possíveis. Esta tabela terá exatamente
-o mesmo padrão de votação conforme os utilizados anteriormente, com valores entre um e cinco.
+Dessa forma, será definido um processo de desenvolvimento que seja adaptável
+ao projeto. Assim, a metodologia a ser definida deve conter os seguintes pontos:
 
-A tabela conterá três ferramentas. Estas, serão julgadas quanto a qualide de atender uma dada feature, como por exemplo,
-a capacidade de lidar bem com uma equipe com poucos envolvidos.
-
-A Tabela \ref{avaliacaoProcessoDesenvolvimentoSoftware} de avaliação será preenchida para a escolha do melhor método de desenvolvimento.
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{table}[]
-    \centering
-    \caption{Avaliação de Processo de Desenvolvimento de Software}
-    \label{avaliacaoProcessoDesenvolvimentoSoftware}
-    \begin{tabular}{@{}llll@{}}
-        \toprule
-        \multicolumn{1}{|l|}{}                                                                                          & \multicolumn{1}{l|}{\textbf{Metodologia A}} & \multicolumn{1}{l|}{\textbf{Metodologia B}} & \multicolumn{1}{l|}{\textbf{Metodologia C}} \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Poucos Envolvidos}}                                                                & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Equipe Próxima}}                                                                   & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Pouca Documentação}}                                                               & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Ferramentas de Suporte Rápido}}                                                    & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Conhecimento Compartilhado}}                                                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Curto Prazo entre Reuniões\\ Presenciais\end{tabular}}} & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \midrule
-            &                                             &                                             &                                             \\ \midrule
-        \multicolumn{1}{|l|}{\textbf{Total}}                                                                            & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       & \multicolumn{1}{l|}{}                       \\ \bottomrule
-    \end{tabular}
-\end{table}
-
-Após estas etapas, o método será adotado para executar reuniões semanais e aferir qualidade do desenvolvimento.
+\begin{itemize}
+        \item Poucos  envolvidos no projeto;
+        \item Equipe próxima;
+        \item Baixa necessidade de documentação dos processos;
+        \item Exitencia de ferramentas de suporte rápido;
+        \item Suporte para conhecimento compartilhado;
+        \item Curto prazo entre reuniões presenciais.
+\end{itemize}
 
 
 \subsection{Requisitos do Projeto}
